@@ -13,11 +13,11 @@
 class Compara {
 
     /**
-     * Faz comparacao dos tipos passados pelo
+     * Faz comparacao dos valores e tipos passados pelo
      * usuario e exibe o resultado na tela
      * 
-     * @param numeric|string|bool $a Primeiro valor a ser comparado com o segundo
-     * @param numeric|string|bool $b Segundo valor a ser comparado com o primeiro
+     * @param numeric|string|bool $a Primeiro valor a ser comparado
+     * @param numeric|string|bool $b Segundo valor a ser comparado
      */
     public function comparacao($a, $b) {
         //var_export mostra informacao estruturada da variavel
@@ -40,6 +40,9 @@ class Compara {
 $obj = new Compara();
 $obj->comparacao(1, '1');
 $obj->comparacao(1, true);
+$obj->comparacao('1', true);
+$obj->comparacao(0, true);
+$obj->comparacao('0', true);
 $obj->comparacao(true, 'true');
 $obj->comparacao(1.4, 1.9);
 $obj->comparacao(1.4, 1.4);
