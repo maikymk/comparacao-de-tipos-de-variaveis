@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * Classe que compara as variaveis
+ *
+ * Classe compara se as variaveis enviadas a funcao
+ * sao iguais/identicas. Mostra o retorno de cada comparacao
+ * na tela para o usuario.
+ *
+ * @author Maiky Alves da Silva <maikymk@hotmail.com>
+ */
+
 class Compara {
 
     /**
